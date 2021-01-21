@@ -73,6 +73,7 @@ class App extends Component {
     tasks.push(task);
     this.setState({
       tasks: tasks,
+      taskEditing: null,
     });
 
     localStorage.setItem("tasks", JSON.stringify(tasks));

@@ -17,12 +17,13 @@ class TaskForm extends Component {
   }
 
   componentWillMount() {
-    if (this.props.taskEditing !== null) {
+    if (this.props.task) {
       this.setState({
         id: this.props.task.id,
         name: this.props.task.name,
         status: this.props.task.status,
       });
+    } else {
     }
   }
 
@@ -82,7 +83,7 @@ class TaskForm extends Component {
                   onChange={this.onChangle}
                 />
               </div>
-              <label>Trạng Thái :</label> 
+              <label>Trạng Thái :</label>
               <select
                 class="form-control"
                 required="required"
