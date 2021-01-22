@@ -87,6 +87,7 @@ class TaskForm extends Component {
               <select
                 class="form-control"
                 required="required"
+                name="status"
                 value={this.state.status}
                 onChange={this.onChangle}
               >
